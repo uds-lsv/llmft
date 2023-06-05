@@ -4,7 +4,7 @@
 
 ##### Saarland University, University of Cambridge, Bar-Ilan University, Allen Institute for Artificial Intelligence, University of Washington
 
-This repository contains code for the paper [Few-shot Fine-tuning vs. In-context Learning: A Fair Comparison and Evaluation](). 
+This repository contains code for the paper [Few-shot Fine-tuning vs. In-context Learning: A Fair Comparison and Evaluation](https://arxiv.org/abs/2305.16938). 
 
 ## Abstract
 

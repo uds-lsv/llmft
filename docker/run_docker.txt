@@ -1,0 +1,12 @@
+# buid docker image
+
+docker build -f ./docker/Dockerfile --build-arg USER_UID=$UID --build-arg USER_NAME=$(id -un) -t llmft:22.08-py3 .
+
+# create docker container
+
+docker run -it --rm --gpus=all --pid=host --ipc=host --user <username> \
+    -v <path/to/llmft>:/llmft \
+    -v <path/to/datasets>:/datasets \
+    -v <path/to/logfiles>:/logfiles \
+    -v /<path/to/.cache>:/cache \
+    llmft:22.08-py3

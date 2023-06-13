@@ -1,0 +1,13 @@
+universe                = docker
+docker_image            = mosbachmarius/llmft:22.08-py3
+executable              = /home/mmosbach/projects/llmft/experiments/pattern_verbalizer_ft/run.sh
+output                  = /home/mmosbach/logs/llmft/outputs/run.sh.$(ClusterId).$(ProcId).$(Year)_$(Month)_$(Day)_$(SUBMIT_TIME).out
+error                   = /home/mmosbach/logs/llmft/outputs/run.sh.$(ClusterId).$(ProcId).$(Year)_$(Month)_$(Day)_$(SUBMIT_TIME).err
+log                     = /home/mmosbach/logs/llmft/outputs/run.sh.$(ClusterId).$(ProcId).$(Year)_$(Month)_$(Day)_$(SUBMIT_TIME).log
+request_GPUs            = 8
+request_CPUs            = 10
+request_memory          = 100G
+requirements            = (UidDomain == "cs.uni-saarland.de") && (machine == "bragi.cs.uni-saarland.de")
++WantGPUHomeMounted     = true
++PeriodicRemoveNotHold  = true
+queue 1

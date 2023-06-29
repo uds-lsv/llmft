@@ -1,6 +1,7 @@
 from dataclasses import dataclass, field, fields
 from enum import Enum
 from typing import Optional
+from os import environ
 
 from task_utils import task_to_keys, HANS_SUBCASES
 
@@ -18,8 +19,8 @@ SUPPORTED_MODELS = [
     "facebook/opt-66b",
 
     # Path to LLaMA models
-    "/home/mmosbach/cache/llama/hf/7B",
-    "/home/mmosbach/cache/llama/hf/13B",
+    environ["CACHE_BASE_DIR"] + "/llama/hf/7B",
+    environ["CACHE_BASE_DIR"] + "/llama/hf/13B",
 
     # GPT-NeoX
     "EleutherAI/gpt-neox-20b",

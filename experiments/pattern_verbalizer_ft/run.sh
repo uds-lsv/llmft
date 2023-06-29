@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-export PROJECT_DIR=/llmft
+# CHANGE ME:
+export PROJECT_DIR=$HOME/llmft
 source $PROJECT_DIR/scripts/misc/setup.sh
 
 # args: task_name, max_train_samples, epochs, warmup_ratio, bsz, num_gpus, learning_rate, model_name_or_path, port

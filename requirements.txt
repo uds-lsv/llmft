@@ -3,11 +3,12 @@ matplotlib
 pandas
 jupyter
 ipywidgets
-transformers==4.23.1
+transformers==4.28.0
+tokenizers==0.13.3
 evaluate==0.3.0
 accelerate
-deepspeed==0.7.4
-datasets==2.6.1
+deepspeed==0.8.3
+datasets==2.13.1
 wandb
 scikit-learn
 scipy

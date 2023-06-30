@@ -37,7 +37,7 @@ RUN python3 -m pip install tokenizers==0.13.3
 RUN python3 -m pip install evaluate==0.3.0
 RUN python3 -m pip install accelerate
 RUN python3 -m pip install deepspeed==0.8.3
-RUN python3 -m pip install datasets==2.11.0
+RUN python3 -m pip install datasets==2.13.1
 RUN python3 -m pip install wandb
 RUN python3 -m pip install scikit-learn
 RUN python3 -m pip install scipy

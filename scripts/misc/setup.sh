@@ -1,6 +1,6 @@
 # setup basic paths
-export CACHE_BASE_DIR=/home/mmosbach/cache
-export OUTPUT_DIR=/home/mmosbach/logfiles
+export CACHE_BASE_DIR=$PROJECT_DIR/cache
+export OUTPUT_DIR=$PROJECT_DIR/logfiles
 
 # setup wandb
 export WANDB_DISABLED=false
@@ -31,7 +31,7 @@ mkdir -p $HF_MODELS_CACHE
 mkdir -p $TORCH_EXTENSIONS_DIR
 
 # set path to python
-# export PYTHON_BIN="/home/mmosbach/miniconda3/envs/llmft/bin"
+# export PYTHON_BIN="$HOME/miniconda3/envs/llmft/bin"
 
 # rename GPUs
 source $PROJECT_DIR/scripts/misc/rename_gpu_ids.sh

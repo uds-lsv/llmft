@@ -16,6 +16,7 @@ SUPPORTED_MODELS = [
     "facebook/opt-13b",
     "facebook/opt-30b",
     "facebook/opt-66b",
+    "meta-llama/Llama-2-7b-hf",
 
     # Path to LLaMA models
     "/home/mmosbach/cache/llama/hf/7B",
